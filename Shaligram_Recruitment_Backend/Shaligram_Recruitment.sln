@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shaligram_Recruitment", "Shaligram_Recruitment\Shaligram_Recruitment.csproj", "{2A69D458-82EC-47DD-9802-BE8EBC0D4364}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shaligram_Recruitment.Common", "Shaligram_Recruitment.Common\Shaligram_Recruitment.Common.csproj", "{95783A6F-55B8-48F4-BD73-55592765CAC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shaligram_Recruitment.Data", "Shaligram_Recruitment.Data\Shaligram_Recruitment.Data.csproj", "{A0FCDDBD-E633-4B14-80C6-47B7DE87E374}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shaligram_Recruitment.Model", "Shaligram_Recruitment.Model\Shaligram_Recruitment.Model.csproj", "{542E99A5-5D5B-470C-9E18-4F549F4B99BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shaligram_Recruitment.Services", "Shaligram_Recruitment.Services\Shaligram_Recruitment.Services.csproj", "{E7806D2C-BEBD-4909-8C94-4899BE0BD511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaligram_Recruitment_Api", "Shaligram_Recruitment_Api\Shaligram_Recruitment_Api.csproj", "{2F7A7857-23D7-4B93-BC33-DDF172DA42B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A69D458-82EC-47DD-9802-BE8EBC0D4364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A69D458-82EC-47DD-9802-BE8EBC0D4364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A69D458-82EC-47DD-9802-BE8EBC0D4364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A69D458-82EC-47DD-9802-BE8EBC0D4364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95783A6F-55B8-48F4-BD73-55592765CAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95783A6F-55B8-48F4-BD73-55592765CAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95783A6F-55B8-48F4-BD73-55592765CAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95783A6F-55B8-48F4-BD73-55592765CAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0FCDDBD-E633-4B14-80C6-47B7DE87E374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0FCDDBD-E633-4B14-80C6-47B7DE87E374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0FCDDBD-E633-4B14-80C6-47B7DE87E374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0FCDDBD-E633-4B14-80C6-47B7DE87E374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542E99A5-5D5B-470C-9E18-4F549F4B99BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542E99A5-5D5B-470C-9E18-4F549F4B99BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542E99A5-5D5B-470C-9E18-4F549F4B99BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542E99A5-5D5B-470C-9E18-4F549F4B99BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7806D2C-BEBD-4909-8C94-4899BE0BD511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7806D2C-BEBD-4909-8C94-4899BE0BD511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7806D2C-BEBD-4909-8C94-4899BE0BD511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7806D2C-BEBD-4909-8C94-4899BE0BD511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7A7857-23D7-4B93-BC33-DDF172DA42B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7A7857-23D7-4B93-BC33-DDF172DA42B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7A7857-23D7-4B93-BC33-DDF172DA42B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7A7857-23D7-4B93-BC33-DDF172DA42B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7B046A6-8F66-478E-BCE9-68D7054D5BF8}
+	EndGlobalSection
+EndGlobal

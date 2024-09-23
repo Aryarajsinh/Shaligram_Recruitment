@@ -1,0 +1,64 @@
+<!-- <div class="card-body p-md-5 mx-md-4 col-sm-12 response ">
+    <div class="text-center">
+        <img src="~/img/Vector.png"
+             alt="logo">
+        <h4 class="mt-1 mb-5 pb-1">ResetPassword</h4>
+    </div>
+<form class="pt-3" asp-action="ResetPassword" method="post">
+    <div class="form-group">
+        <label asp-for="NewPassword">New Password<span class="text-danger" style="margin-left: 8px;">*</span></label>
+        <input type="password" asp-for="NewPassword" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="New Password">
+        <span asp-validation-for="NewPassword" class="text-danger"></span>
+    </div>
+    <div class="form-group mt-3">
+        <label asp-for="ConfirmPassword">Confirm Password<span class="text-danger" style="margin-left: 8px;">*</span></label>
+        <input type="password" asp-for="ConfirmPassword" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Confirm Password">
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+        <div class="form-group mt-3">
+            <button type="submit" id="form2Example22" class="btn p-2 mt-4 w-100 text-light mb-3 auth-form-btn" style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">
+                Reset Password
+            </button>
+        </div>
+
+    <div class="text-center mt-4 font-weight-light">
+        Back To Login? <a href="/UserPanle/Login" class="text-primary">SignIn</a>
+    </div>
+</form>
+</div> -->
+
+
+<div class="bodyClass">
+    <div class="login-box" style="margin-left: -400px !important;">
+        <h2>Forgot Password</h2>
+        <form [formGroup]="ResetPassForm" (submit)="PassValidCheck()">
+            <div class="user-box">
+              <div style="display: flex; justify-content: end;">
+                <img src="assets/images/eye.svg" (click)="togglePasswordVisibility()" *ngIf="!showPassword"/>
+                <img src="assets/images/eye-off.svg" (click)="togglePasswordVisibility()" *ngIf="showPassword"/>
+            </div>
+                <input [type]="showPassword ? 'text' : 'password'"  formControlName="Password">
+                <label>New Password* </label>
+                <span  class="text-danger" *ngIf="submitted && ResetPassFormValidation.Password.errors?.['required']">Password is required.</span>
+              
+              </div>
+              <br>
+            <div class="user-box">
+              
+                <input type="password"  formControlName="ConfPasswod">
+                <label>Confirm Password*</label>
+                <span  class="text-danger" *ngIf="submitted && ResetPassFormValidation.ConfPasswod.errors?.['required']">Confirm Password is required.</span>
+                <span class="text-danger">{{message}}</span>
+              </div>
+            
+          <button href="#" class="btn" type="submit" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    

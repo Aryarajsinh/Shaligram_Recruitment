@@ -1,0 +1,95 @@
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-content>
+      <div class="text-center">
+        <mat-card-header>
+          <mat-card-title class="text-center text-primary mb-2">
+            <h3>Student Add</h3>
+          </mat-card-title>
+        </mat-card-header>
+        <button mat-icon-button mat-dialog-close class="close-button btn btn-danger">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+      <form [formGroup]="StudentForm" (ngSubmit)="SubmitStudent()" novalidate>
+        <mat-card>
+
+          <mat-card-content>
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Student Name Field -->
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Student Name</mat-label>
+                  <input matInput formControlName="StudentName" required>
+                  <mat-error
+                    *ngIf="submitted && StudentForm.get('StudentName')?.invalid && StudentForm.get('StudentName')?.touched">
+                    Student Name is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+              <div class="col-md12">
+                <!-- College Name Field -->
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>College Name</mat-label>
+                  <input matInput formControlName="CollegeName" required>
+                  <mat-error
+                    *ngIf="submitted && StudentForm.get('CollegeName')?.invalid && StudentForm.get('CollegeName')?.touched">
+                    College Name is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+              <div class="col-md-12">
+                <!-- Email Field -->
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Email</mat-label>
+                  <input type="email" matInput formControlName="EmailId" required>
+                  <mat-error
+                    *ngIf="submitted && StudentForm.get('EmailId')?.invalid && StudentForm.get('EmailId')?.touched">
+                    Email is required.
+                  </mat-error>
+                  <mat-error *ngIf="submitted || StudentForm.get('EmailId')?.errors?.['pattern']">
+                    Please enter a valid Email Id.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+              <div class="col-md-12">
+                <!-- Phone Number Field -->
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Phone Number</mat-label>
+                  <input matInput formControlName="PhoneNumber" required>
+                  <mat-error
+                    *ngIf="submitted && StudentForm.get('PhoneNumber')?.invalid && StudentForm.get('PhoneNumber')?.touched">
+                    Phone Number is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+
+              <div class="col-md-12">
+                <!-- Batch Year Field -->
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>Batch Year</mat-label>
+                  <input matInput formControlName="BatchYear" required>
+                  <mat-error
+                    *ngIf="submitted && StudentForm.get('BatchYear')?.invalid && StudentForm.get('BatchYear')?.touched">
+                    Batch Year is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center col-md-12">
+              <button mat-raised-button type="submit" class="btn w-100 text-white"
+                style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Submit</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>

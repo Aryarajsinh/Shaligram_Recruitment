@@ -1,0 +1,54 @@
+
+--------------------------------- 23/09/2024 11:01:14 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:01:20 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:01:48 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: IDX12709: CanReadToken() returned false. JWT is not well formed.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:01:53 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: IDX12709: CanReadToken() returned false. JWT is not well formed.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:02:19 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: IDX12709: CanReadToken() returned false. JWT is not well formed.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:02:24 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: IDX12709: CanReadToken() returned false. JWT is not well formed.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:15:37 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: IDX12709: CanReadToken() returned false. JWT is not well formed.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 23/09/2024 11:15:41 AM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: IDX12709: CanReadToken() returned false. JWT is not well formed.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EndcodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+InnerException: 
+Exception Email sent: True

@@ -1,0 +1,26 @@
+﻿@model Shaligram_Recruitment.Model.ViewModels.QuestionSet.QuestionSetModel
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden>
+                <label asp-for="QuestionSetId" class="control-label"></label>
+                <input asp-for="QuestionSetId" class="form-control" />
+                <span asp-validation-for="QuestionSetId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QuestionSetName" class="control-label"></label>
+                <input asp-for="QuestionSetName" class="form-control" />
+                <span asp-validation-for="QuestionSetName" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary w-100" style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Update QuestionSet</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

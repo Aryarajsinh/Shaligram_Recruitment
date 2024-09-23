@@ -1,0 +1,389 @@
+﻿@model Shaligram_Recruitment.Model.ViewModels.Pagination.PagedResult
+
+@{
+    ViewData["Title"] = "StudentList";
+}
+<style>
+    .colored-toast.swal2-icon-success {
+        background-color: #a5dc86 !important;
+    }
+
+    .colored-toast.swal2-icon-error {
+        background-color: #f27474 !important;
+    }
+
+    div.top {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        margin-bottom: 10px;
+    }
+
+        /* Adjust spacing as needed */
+        div.top .dataTables_filter {
+            margin-left: auto; /* Push the button to the right side */
+        }
+    /* Container for the search box and icon */
+    .dataTables_filter {
+        position: relative; /* Position relative to contain the icon */
+    }
+
+        /* Style the search box input */
+        .dataTables_filter input {
+            height: 40px;
+            width: 250px; /* Increase the width of the search box */
+            padding: 10px 35px 10px 15px; /* Add padding to accommodate the icon */
+            border: 2px solid #007bff; /* Set the border color to blue */
+            border-radius: 4px; /* Optional: rounded corners */
+            font-size: 14px; /* Set font size */
+            color: #333; /* Set text color */
+        }
+
+        /* Style the search icon */
+        .dataTables_filter .fa-search {
+            position: absolute; /* Position the icon inside the input */
+            right: 260px; /* Align the icon to the right */
+            top: 50%; /* Center the icon vertically */
+            transform: translateY(-50%); /* Adjust vertical alignment */
+            color: #007bff; /* Set the color of the icon */
+            font-size: 18px; /* Set the icon size */
+        }
+
+    .search-wrapper {
+        display: inline-block; /* Ensure the wrapper fits around the input and icon */
+        position: relative; /* Position relative to contain the icon */
+        margin-left: 30px;
+    }
+
+</style>
+@if (TempData["Msg"] != null)
+{
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            iconColor: 'white',
+            customClass: {
+                popup: 'colored-toast'
+            },
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            title: '@TempData["Msg"]',
+            icon: 'success',
+        })
+    </script>
+}
+@if (TempData["Error"] != null)
+{
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            iconColor: 'white',
+            customClass: {
+                popup: 'colored-toast'
+            },
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            title: '@TempData["Error"]',
+            icon: 'error',
+        })
+    </script>
+}
+
+
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- Bootstrap JavaScript Bundle with Popper -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<style>
+    .modal-dialog {
+        margin: 30px auto;
+        margin-top: 300px;
+        height: 100px !important;
+        width: 450px !important;
+        border-radius: 500px !important;
+    }
+</style>
+<h1>StudentList</h1>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="QuestionSetDetailsModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="studentDetailsModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="studentDetailsModalLabel">Student Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="modalclose()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="QuestionSetDetailsContent">
+                <!-- Content loaded via AJAX -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Add Student Modal -->
+<div class="modal fade" id="addStudentModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="addStudentModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addStudentModalLabel">Add New Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="modalclose()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+               
+                <form id="addStudentForm" enctype="multipart/form-data">
+                    <div class="form-group" hidden>
+                        <label for="QuestionSetId">QuestionSetId</label>
+                        <input type="number" class="form-control" id="studentId" asp-for="QuestionSets.QuestionSetId" value="1" />
+                        <span class="text-danger" id="QuestionSetNameError"></span>
+                    </div>                 
+
+                    <div class="form-group">
+                        <label for="QuestionSetName">QuestionSetName</label>
+                        <input type="text" class="form-control" id="QuestionSetName" asp-for="QuestionSets.QuestionSetName"  />
+                        <span class="text-danger"></span>
+                    </div>                
+                    <button type="submit" class="btn btn-primary w-100 mt-1" style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Add QuestionSet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- UploadFile Model -->
+
+
+<div class="p-5 pt-1">
+    <table class="table" id="QuestionSetTable">
+        <thead>
+            <tr>
+                <th>
+                    SR.
+                </th>
+                <th>
+                    Question Set
+                </th>               
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+
+    </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    function QuestionSetDetails(QuestionSetId) {
+        $.ajax({
+            url: '@Url.Action("Edit", "QuestionSet")',
+            type: 'GET',
+            data: { id: QuestionSetId },
+            success: function (data) {
+                $('#QuestionSetDetailsContent').html(data);
+                var myModal = new bootstrap.Modal(document.getElementById('QuestionSetDetailsModal'), {
+                    keyboard: true
+                });
+                myModal.show();
+            },
+            error: function () {
+                alert('Failed to load QuestionSet details.');
+            }
+        });
+    }
+</script>
+<script>
+    function confirmDelete(deleteUrl) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            showCloseButton: true, // Add close button in the top right corner
+            allowOutsideClick: false, // Disable closing when clicking outside
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = deleteUrl;
+            }
+        });
+    }
+</script>
+
+<script>
+    document.getElementById('addStudentForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Clear previous validation errors
+        document.querySelectorAll('.text-danger').forEach(span => span.innerHTML = '');
+
+        let isValid = true;
+
+        // Get form elements
+        let QuestionSetName = document.getElementById('QuestionSetName');
+
+
+        // Validate Student Name
+        if (QuestionSetName.value.trim() === "") {
+            document.getElementById('QuestionSetName').innerHTML = 'QuestionSetName is required';
+            console.log(document.getElementById('QuestionSetNameError').innerHTML)
+            console.log("Error")
+            isValid = false;
+        }
+
+        // Prevent form submission if not valid
+        if (!isValid) {
+            event.preventDefault();
+        }
+        else {
+            SubmitData();
+        }
+    });
+</script>
+
+<script>
+    function modalclose() {
+        $('#addStudentModal').modal('hide');
+    }
+    function uploadmodalclose() {
+     
+        $('#uploadFileModel').modal('hide');
+    }
+</script>
+<script>
+    // document.getElementById("QuestionSetTable").DataTable();
+    $('#QuestionSetTable').DataTable({
+        processing: true,
+        serverSide: true,
+        ajax: {
+            url: '/QuestionSet/QuestionSetList',
+            type: 'POST',
+            data: function (d) {
+                d.SortColumn = d.columns[d.order[0].column].data;
+                d.SortDirection = d.order[0].dir;
+            }
+        },
+        columns: [
+            { data: 'questionSetId', name: 'Question Set Id' },
+            { data: 'questionSetName', name: 'QuestionSet Name' },
+            {
+                data: "questionSetId",
+                "render": function (data) {
+                    return `
+                        <a href="javascript:void(0);" onclick="QuestionSetDetails(${data})" class="btn btn-link">
+                            <img src='${window.location.origin}/img/Details.png' alt="Details" />
+                        </a>
+                            <a href="javascript:void(0);" onclick="confirmDelete('/QuestionSet/Delete/${data}')" class="btn btn-link">
+                            <img src='${window.location.origin}/img/Delete.png' alt="Delete" />
+                        </a>`;
+                }
+            }
+        ],
+        dom: '<"top"f>rt<"bottom"lp><"clear">',
+        initComplete: function () {
+            console.log("DataTable initialized"); // This will confirm DataTable is loading
+
+            $("div.top").append('<button id="addStudent" class="btn btn-primary ml-3 p-2" style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Add QuestionSet</button>');
+
+            $('#addStudent').on('click', function () {
+                $('#addStudentModal').modal('show');
+            });
+
+            // Append search icon
+            $('.dataTables_filter input').wrap('<div class="search-wrapper"></div>');
+            $('.dataTables_filter input').after('<i class="fa fa-search "></i>');
+        },
+        error: function (xhr, error, thrown) {
+            console.log("Error loading DataTable: " + error); // Capture error message
+        }
+    });
+
+
+    const SubmitData = () => {
+        console.log("Submit Data Call")
+        const formData = {
+           
+            QuestionSetName: $('#QuestionSetName').val()
+        };
+        console.log(formData)
+        $.ajax({
+            url: '/QuestionSet/AddQuestionSet',
+            type: 'POST',
+            data: formData,
+            success: function (response) {
+                console.log("HIT")
+                if (response.success) {
+                    // Hide the modal and reload the page or DataTable
+                    $('#addStudentModal').modal('hide');
+                    window.location.reload(); // Or use $('#studentTable').DataTable().ajax.reload();
+                } else {
+                    // Clear previous validation errors
+                    $('span.text-danger').html('');
+
+                    // Display new validation errors
+                    if (response.errors) {
+                        $.each(response.errors, function (key, value) {
+                            var errorSpan = $('span[asp-validation-for="' + key.split('.')[1] + '"]');
+                            if (errorSpan.length) {
+                                errorSpan.html(value); // Set the error message in the span
+                            }
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Error',
+                            text: response.message,
+                            confirmButtonColor: '#3085d6',
+                            confirmButtonText: 'OK'
+                        }); // Handle general errors
+                    }
+
+                    // Reopen the modal if it was closed
+                    $('#addStudentModal').modal('show');
+
+                }
+            },
+            error: function (error) {
+                console.error('Error adding student:', error);
+            }
+        });
+
+    };
+
+
+</script>
+

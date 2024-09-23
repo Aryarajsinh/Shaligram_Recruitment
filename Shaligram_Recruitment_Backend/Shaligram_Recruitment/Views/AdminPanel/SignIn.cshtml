@@ -1,0 +1,214 @@
+﻿@model Shaligram_Recruitment.Model.ViewModels.SignInModel;
+@{
+    Layout = "~/Views/Shared/_SignInLayout.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-T7MnU7ucRkV+cpIB9Gi3uzQH+7nJ6xK9bE8k3Hbuc+0X0f5M5LUPXfJnxFkLADJW4k1H6ErJbnll5ox4Jt0GgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+    .colored-toast.swal2-icon-error {
+        background-color: #f27474 !important;
+    }
+
+    .colored-toast.swal2-icon-success {
+        background-color: #a5dc86 !important;
+    }
+
+    .colored-toast.swal2-icon-warning {
+        background-color: #f8bb86 !important;
+    }
+
+    .custom-link {
+        color: #333333 !important;
+        transition: color 0.3s ease; /* Smooth transition effect */
+    }
+
+        .custom-link:hover {
+            color: #007bff !important; /* Light blue color on hover */
+        }
+
+    .custom-signup-link {
+        color: #333333 !important; /* Default Bootstrap primary color */
+        transition: color 0.3s ease; /* Smooth transition effect */
+    }
+
+        .custom-signup-link:hover {
+            color: #0056b3 !important; /* Darker shade of blue on hover */
+        }
+
+</style>
+
+<div class="card-body p-md-5 mx-md-4 col-sm-12 response ">
+
+    <div class="text-center">
+        <img src="~/img/Vector.png"
+             alt="logo">
+        <h4 class="mt-1 mb-5 pb-1">Recruitment</h4>
+    </div>
+
+    <form class="responsiveform" method="post">
+        <h4 class="text-center">Welcome Back!</h4>
+
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label mt-2" for="form2Example11"><span class="fw-bold">Email Address</span> <span class="text-danger">*</span></label>
+            <input type="email" asp-for="Email" id="form2Example11" class="form-control p-3"placeholder="Enter Your Email Address" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <label class="form-label" for="form2Example22"><span class="fw-bold">Password</span> <span class="text-danger">*</span></label>
+        <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input class="form-control p-3"type="password" id="password" asp-for="Password" placeholder="Password" value="">
+            <span class="input-group-text"><i class="fas fa-eye-slash" id="togglePassword"></i></span>
+        </div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+        <div class="text-center pt-1 mb-5 pb-1 mt-3">
+            <div class="form-group">
+                <button type="submit" id="form2Example22" class="btn p-2 mt-1 mb-3 w-100 text-light " style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">
+                    Sign In
+                </button>
+            </div>
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Checkbox with enhanced styling -->
+                    <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                        <label class="form-check-label fw-bold" for="loginCheck"> Remember me </label>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Simple link with enhanced styling -->
+                    <a href="/AdminPanel/ForgotPassword" class="text-decoration-none fw-bold custom-link">Forgot password?</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted">
+                    Don't have an account?
+                    <a href="/AdminPanle/Register" class="text-decoration-none fw-bold custom-signup-link">Sign Up</a>
+                </p>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+
+
+@if (TempData["Login"] != null)
+{
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            iconColor: 'white',
+            customClass: {
+                popup: 'colored-toast'
+            },
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            title: '@TempData["Login"]',
+            icon: 'error',
+        })
+    </script>
+}
+@if (TempData["User"] != null)
+{
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            iconColor: 'white',
+            customClass: {
+                popup: 'colored-toast'
+            },
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            title: '@TempData["User"]',
+            icon: 'success',
+        })
+    </script>
+}
+@if (TempData["Logout"] != null)
+{
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            iconColor: 'white',
+            customClass: {
+                popup: 'colored-toast'
+            },
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            title: '@TempData["Logout"] ',
+            icon: 'warning',
+        })
+    </script>
+}
+@if (TempData["Password"] != null)
+{
+    <script>
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            iconColor: 'white',
+            customClass: {
+                popup: 'colored-toast'
+            },
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            title: '@TempData["Password"]',
+            icon: 'success',
+        })
+    </script>
+}
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+
+        // toggle the type attribute
+        const type = password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the eye icon
+        this.classList.toggle('fa-eye');
+    });
+</script>
+

@@ -1,0 +1,138 @@
+
+--------------------------------- 09/09/2024 11:46:56 AM ----------------------------------
+Requested URL: /Scripts/jquery-3.4.1.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:11 AM ----------------------------------
+Requested URL: /Student/StudentList
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:11 AM ----------------------------------
+Requested URL: /Scripts/jquery-3.4.1.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:17 AM ----------------------------------
+Requested URL: /Scripts/jquery-3.4.1.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:17 AM ----------------------------------
+Requested URL: /Student/img/undraw_profile_3.svg
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:17 AM ----------------------------------
+Requested URL: /toastr.min.css
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:17 AM ----------------------------------
+Requested URL: /Scripts/toastr.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:21 AM ----------------------------------
+Requested URL: /Scripts/toastr.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 11:49:34 AM ----------------------------------
+Requested URL: /Scripts/jquery-3.4.1.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService)
+Request Params: 
+
+--------------------------------- 09/09/2024 12:22:13 PM ----------------------------------
+Requested URL: /toastr.min.css
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 225
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 91
+Request Params: 
+
+--------------------------------- 09/09/2024 12:22:19 PM ----------------------------------
+Requested URL: /CollegeBatch/CollegeBatchList
+Error Message: The view 'CollegeBatchList' was not found. The following locations were searched:
+/Views/CollegeBatch/CollegeBatchList.cshtml
+/Views/Shared/CollegeBatchList.cshtml
+/Pages/Shared/CollegeBatchList.cshtml
+InnerException: 
+StackTrace:    at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 92
+Request Params: 
+
+--------------------------------- 09/09/2024 12:23:53 PM ----------------------------------
+Requested URL: /Scripts/jquery-3.4.1.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 225
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 91
+Request Params: 
+
+--------------------------------- 09/09/2024 12:23:59 PM ----------------------------------
+Requested URL: /Scripts/toastr.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 225
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 91
+Request Params: 
+
+--------------------------------- 09/09/2024 01:16:07 PM ----------------------------------
+Requested URL: /Home/img/undraw_profile_1.svg
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 225
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 91
+Request Params: 
+
+--------------------------------- 09/09/2024 01:16:08 PM ----------------------------------
+Requested URL: /Scripts/jquery-3.4.1.min.js
+Error Message: The process cannot access the file 'C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\wwwroot\ReqResLogs\ReqResLog_09_09_2024.txt' because it is being used by another process.
+InnerException: 
+StackTrace:    at Shaligram_Recruitment.Middleware.CustomMiddleware.AddReqResLogsToLoggerFile(HttpContext context) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 225
+   at Shaligram_Recruitment.Middleware.CustomMiddleware.Invoke(HttpContext context, IAdminPanelService _accountService) in C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\Middleware\CustomMiddleware.cs:line 91
+Request Params: 

@@ -1,0 +1,6 @@
+
+--------------------------------- 12/07/2023 06:55:18 PM ----------------------------------
+Requested URL: /api/account/register-user
+Exception: Procedure or function 'sp_RegisterUser' expects parameter '@UserName', which was not supplied.
+InnerException: 
+Exception Email sent: True

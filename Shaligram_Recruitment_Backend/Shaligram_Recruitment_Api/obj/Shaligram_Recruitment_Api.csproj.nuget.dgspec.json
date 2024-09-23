@@ -1,0 +1,417 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj": {}
+  },
+  "projects": {
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj",
+        "projectName": "Shaligram_Recruitment.Common",
+        "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj",
+        "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
+        "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "LumenWorks.Framework.IO": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Linq": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Data\\Shaligram_Recruitment.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Data\\Shaligram_Recruitment.Data.csproj",
+        "projectName": "Shaligram_Recruitment.Data",
+        "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Data\\Shaligram_Recruitment.Data.csproj",
+        "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
+        "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj"
+              },
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
+        "projectName": "Shaligram_Recruitment.Model",
+        "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
+        "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
+        "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj",
+        "projectName": "Shaligram_Recruitment.Services",
+        "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj",
+        "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
+        "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Data\\Shaligram_Recruitment.Data.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Data\\Shaligram_Recruitment.Data.csproj"
+              },
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AllOverIt.Csv": {
+              "target": "Package",
+              "version": "[7.26.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj",
+        "projectName": "Shaligram_Recruitment_Api",
+        "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj",
+        "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
+        "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj"
+              },
+              "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj": {
+                "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.7.1.1, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

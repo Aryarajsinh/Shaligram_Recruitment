@@ -1,0 +1,72 @@
+
+
+<div class="card-body p-md-5 mx-md-4 col-sm-12 response ">
+
+    <div class="text-center">
+        <img src="assets/images/Vector.png" alt="logo">
+        <h4 class="mt-1 mb-5 pb-1">Recruitment</h4>
+    </div>
+
+    <form class="responsiveform " [formGroup]="LoginForm" (ngSubmit)="UserValidCheck()" method="post" >
+        <h4 class="text-center">Welcome Back!</h4>
+
+        <!-- Email Field -->
+        <div class="form-outline mb-4">
+            <label class="form-label mt-2" for="form2Example11">
+                <span class="fw-bold">Email Address</span>
+                <span class="text-danger">*</span>
+            </label>
+            <input type="email" formControlName="emailId" id="form2Example11" class="form-control p-3"
+                   placeholder="Enter Your Email Address" />
+            <span class="text-danger" *ngIf="submitted && LoginForm.controls['emailId'].errors?.['required']">
+                User email is required.
+            </span>
+            <span class="text-danger" *ngIf="submitted && LoginForm.controls['emailId'].errors?.['email']">
+                Please enter a valid email address.
+            </span>
+        </div>
+
+        <!-- Password Field -->
+        <label class="form-label" for="password">
+            <span class="fw-bold">Password</span>
+            <span class="text-danger">*</span>
+        </label>
+        <div class="input-group">
+            <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            <input class="form-control p-3" [type]="passwordFieldType" id="password" placeholder="Password" formControlName="password">
+            <span class="input-group-text">
+                <i class="fas" [ngClass]="passwordFieldType === 'password' ? 'fa-eye-slash' : 'fa-eye'" (click)="togglePasswordVisibility()" style="cursor: pointer;"></i>
+            </span>
+        </div>
+        
+        <span class="text-danger" *ngIf="submitted && LoginForm.controls['password'].errors?.['required']">
+            Password is required.
+        </span>
+
+        <div class="text-center pt-1 mb-5 pb-1 mt-3">
+            <button type="submit" id="form2Example22" class="btn p-2 mt-1 mb-3 w-100 text-light"
+                    style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">
+                Sign In
+            </button>
+
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="form-check mb-0">
+                        <input class="form-check-input" type="checkbox" id="loginCheck" />
+                        <label class="form-check-label fw-bold" for="loginCheck"> Remember me </label>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <a [routerLink]="['/forgotpassword']" class="text-decoration-none fw-bold custom-link">Forgot password?</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="text-muted">
+                    Don't have an account?
+                    <a [routerLink]="['/register']" class="text-decoration-none fw-bold custom-signup-link">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </form>
+</div>

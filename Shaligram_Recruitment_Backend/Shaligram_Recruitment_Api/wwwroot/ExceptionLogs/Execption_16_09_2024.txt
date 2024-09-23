@@ -1,0 +1,84 @@
+
+--------------------------------- 16/09/2024 03:11:12 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:15 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:15 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:15 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:17 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:18 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:18 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:20 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:21 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 03:11:21 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Attempted to access a missing method.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 04:34:52 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Value cannot be null. (Parameter 's')
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 04:34:53 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Value cannot be null. (Parameter 's')
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 04:34:53 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Value cannot be null. (Parameter 's')
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 16/09/2024 04:34:55 PM ----------------------------------
+Requested URL: /api/Admin/forgot-password
+Exception: Value cannot be null. (Parameter 's')
+InnerException: 
+Exception Email sent: True

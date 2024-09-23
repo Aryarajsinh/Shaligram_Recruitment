@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Verification";
+    Layout = "~/Views/Shared/_SignInLayout.cshtml";
+}
+<style>
+    .colored-toast.swal2-icon-error {
+        background-color: #f27474 !important;
+    }
+
+    .form_control {
+        display: block;
+        width: 100%;
+        height: 2.875rem;
+        padding: 0 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #495057;
+        background-color: #ffffff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 2px;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div class="card-body p-md-5 mx-md-4 col-sm-12 response ">
+    <div class="text-center">
+        <img src="~/img/Vector.png"
+             alt="logo">
+        <h4 class="mt-1 mb-5 pb-1">Enter OTP Below</h4>
+    </div>
+<div id="target" class="mt-3">
+    <h6 class="ms-1">Please enter the one time password sent to your email <br> to verify your account</h6>
+    <div id="otp" class="inputs d-flex flex-row justify-content-center mt-3">
+        <input class="m-2 text-center form_control rounded otpclass" type="text" id="first" maxlength="1" />
+        <input class="m-2 text-center form_control rounded otpclass" type="text" id="second" maxlength="1" />
+        <input class="m-2 text-center form_control rounded otpclass" type="text" id="third" maxlength="1" />
+        <input class="m-2 text-center form_control rounded otpclass" type="text" id="fourth" maxlength="1" />
+        <input class="m-2 text-center form_control rounded otpclass" type="text" id="fifth" maxlength="1" />
+        <input class="m-2 text-center form_control rounded otpclass" type="text" id="sixth" maxlength="1" />
+    </div>
+        <div class="form-group mt-4">
+            <button type="submit" id="otvalidatebtn" class="btn p-2 mt-4 w-100 text-light mb-3 validate" style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">
+                Submit
+            </button>
+        </div>
+    @* <div class="mt-4"> <button class="btn btn-outline-primary px-4 validate" id="otvalidatebtn">Submit</button> </div> *@
+    <div class="mt-3"><p>OTP Expired in <span class="js-timeout">2:00</span></p></div>
+</div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        function OTPInput() {
+            $("#target input").keyup(function (event) {
+                if ($(this).val().length == 1) {
+                    $(this).nextAll('input').first().focus();
+                } else if ($(this).val().length > 1) {
+                    var new_val = $(this).val().substring(1, 2);
+                    $(this).val(new_val);
+                    $(this).nextAll('input').first().focus();
+                } else if (event.keyCode == 8) {
+                    if ($(this).prev('input')) {
+                        $(this).prev('input').focus();
+                    }
+                }
+            });
+        }
+        OTPInput();
+    });
+    $(document).ready(function () {
+        $('.js-timeout').text("2:00");
+        interval = setInterval(function () {
+            var timer = $('.js-timeout').html();
+            timer = timer.split(':');
+            var minutes = timer[0];
+            var seconds = timer[1];
+            seconds -= 1;
+            if (minutes < 0) return;
+            else if (seconds < 0 && minutes != 0) {
+                minutes -= 1;
+                seconds = 59;
+            }
+            else if (seconds < 10 && length.seconds != 2) seconds = '0' + seconds;
+
+            $('.js-timeout').html(minutes + ':' + seconds);
+
+            if (minutes == 0 && seconds == 0) {
+                $.ajax({
+                    method: "POST",
+                    url: `/AdminPanel/UpdateOTPbyEmail`,
+                    success: function (ele) {
+                        console.log(ele);
+                        if (ele > 0) {
+                            clearInterval(interval);
+                            alert("OTP Expired")
+                            $('.otpclass').val("");
+                        }
+                    }
+                })
+            };
+        }, 1000);
+        $("#otvalidatebtn").click(function () {
+            var first = $("#first").val();
+            var second = $("#second").val();
+            var third = $("#third").val();
+            var fourth = $("#fourth").val();
+            var fifth = $("#fifth").val();
+            var sixth = $("#sixth").val();
+            var otp = first + second + third + fourth + fifth + sixth;
+            var data = {};
+            data.OTP = parseInt(otp);
+            $.ajax({
+                method: "Post",
+                url: "/AdminPanel/VerificationOPT",
+                data: data,
+                success: function (ele) {
+                    console.log(ele);
+                    if (ele == 1) {
+                        window.location.href = "/AdminPanel/ResetPassword";
+                    }
+                    else {
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true,
+                            iconColor: 'white',
+                            customClass: {
+                                popup: 'colored-toast'
+                            },
+                            didOpen: (toast) => {
+                                toast.addEventListener('mouseenter', Swal.stopTimer)
+                                toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                        })
+                        Toast.fire({
+                            title: 'OTP Is InValid',
+                            icon: 'error',
+                        })
+                    }
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            })
+        })
+
+    })
+</script>

@@ -1,0 +1,229 @@
+﻿ @model Shaligram_Recruitment.Model.ViewModels.Questions.QuestionModel
+
+@{
+    ViewData["Title"] = "Create Question";
+    var questionTypes = new List<SelectListItem>
+    {
+        new SelectListItem { Value = "Single", Text = "Single Selection" },
+        new SelectListItem { Value = "Multiple", Text = "Multiple Selection" },
+        new SelectListItem { Value = "ImageSingle", Text = "Image Single Selection" },
+        new SelectListItem { Value = "ImageMultiple", Text = "Image Multiple Selection" }
+    };
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Question</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-radio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .custom-radio .form-check-input {
+                width: 1.5rem; /* Increase size */
+                height: 1.5rem; /* Increase size */
+                margin-right: 10px; /* Space between radio button and label */
+            }
+
+            .custom-radio .form-check-label {
+                font-size: 1rem; /* Adjust font size if needed */
+            }
+
+        .remove-option {
+            display: none; /* Hide by default */
+        }
+
+        .option-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Create Question</h1>
+        <form id="questionForm" asp-action="CreateQuestion" method="post">
+            <div class="row d-flex justify-content-between">
+                <div class="col-6 p-3">
+                    <div class="form-group">
+                        <label for="QuestionType">Question Type</label>
+                        <select class="form-control" id="QuestionType" name="QuestionType">
+                            @foreach (var type in questionTypes)
+                            {
+                                <option value="@type.Value">@type.Text</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="form-group">
+                        <label for="QuestionSet">Question Set</label>
+                        <select class="form-control" id="QuestionSet" name="QuestionSet">
+                            @foreach (var type in ViewBag.QuestionSet)
+                            {
+                                <option value="@type.QuestionSetName">@type.QuestionSetName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="QuestionText">Question Text</label>
+                    <input type="text" class="form-control" id="QuestionText" name="QuestionText" required />
+                </div>
+            </div>
+
+           @*  <div id="optionsContainer" class="form-group col-12">
+                <label>Options</label>
+                <div class="options-wrapper">
+                    <div class="option-row">
+                        <div class="row">
+                            <div class="col-1 text-center">
+                                <input type="radio" name="CorrectOption" asp-for="AnswerOption.IsCorrect" value="0" class="correct-option-radio mt-1" style="font-size:30px" />
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="Options[0].Text" asp-for="AnswerOption.Text" placeholder="Option Text" required />
+                            </div>
+                            <div class="col-3">                                
+                                <button type="button" id="addOptionButton" class="btn btn-dark">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span id="optionLimitMessage" class="text-danger" style="display: none;">Maximum options reached.</span>
+            </div> *@
+            <div id="optionsContainer" class="form-group col-12">
+                <label>Options</label>
+                <div class="options-wrapper">
+                    <div class="option-row">
+                        <div class="row">
+                            <div class="col-1 text-center">
+                                <input type="radio" name="AnswerOptions[0].IsCorrect" value="true" class="correct-option-radio mt-1" />
+                            </div>
+                            <div class="col-8">
+                                <input type="text" class="form-control" name="AnswerOptions[0].Text" placeholder="Option Text" required />
+                            </div>
+                            <div class="col-3">
+                                <button type="button" id="addOptionButton" class="btn btn-dark">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span id="optionLimitMessage" class="text-danger" style="display: none;">Maximum options reached.</span>
+            </div>
+
+            <button type="submit" class="btn btn-success">Save Question</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var optionIndex = 1; // Start from index 1 since index 0 is already used
+            var maxOptions = 0; // Maximum number of options based on question type
+
+            function updateOptionLimit() {
+                var questionType = $('#QuestionType').val();
+                if (questi+6+onType === 'Single' || questionType === 'ImageSingle') {
+                    maxOptions = 10;
+                } else if (questionType === 'Multiple' || questionType === 'ImageMultiple') {
+                    maxOptions = 10;
+                }
+                if ($('#optionsContainer .option-row').length >= maxOptions) {
+                    $('#addOptionButton').hide();
+                    $('#optionLimitMessage').show();
+                } else {
+                    $('#addOptionButton').show();
+                    $('#optionLimitMessage').hide();
+                }
+            }
+
+            // function addOption() {
+            //     var newOptionRow = `
+            //         <div class="option-row mt-2">
+            //             <div class="row">
+            //                 <div class="col-1 text-center">
+            //                     <input type="${$('#QuestionType').val() === 'Single' || $('#QuestionType').val() === 'ImageSingle' ? 'radio' : 'checkbox'}" name="CorrectOption" value="${optionIndex}" class="correct-option-radio mt-1" style="font-size:30px" />
+            //                 </div>
+            //                 <div class="col-8">
+            //                     <input type="text" class="form-control" name="Options[${optionIndex}].Text" placeholder="Option Text" required />
+            //                 </div>
+            //                 <div class="col-3">
+            //                     <button type="button" class="btn btn-danger remove-option">-</button>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     `;
+            //     $('#optionsContainer .options-wrapper').append(newOptionRow);
+            //     optionIndex++;
+            //     updateOptionLimit(); // Update the limit after adding a new option
+            //     updateRemoveButtonVisibility(); // Ensure the remove button visibility is updated
+            // }
+            function addOption() {
+                var newOptionRow = `
+                <div class="option-row mt-2">
+                    <div class="row">
+                        <div class="col-1 text-center">
+                            <input type="${$('#QuestionType').val() === 'Single' || $('#QuestionType').val() === 'ImageSingle' ? 'radio' : 'checkbox'}" name="AnswerOptions[${optionIndex}].IsCorrect" value="true" class="correct-option-radio mt-1" />
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="form-control" name="AnswerOptions[${optionIndex}].Text" placeholder="Option Text" required />
+                        </div>
+                        <div class="col-3">
+                            <button type="button" class="btn btn-danger remove-option">-</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+                $('#optionsContainer .options-wrapper').append(newOptionRow);
+                optionIndex++;
+                updateOptionLimit();
+                updateRemoveButtonVisibility();
+            }?zxcv bn.0
+021012100 00000000`1234564`           function updateRemoveButtonVisibility() {
+                if ($('#optionsContainer .option-row').length > 1) {
+                    $('.remove-option').show();
+                } else {
+                    $('.remove-option').hide();
+                }
+            }
+
+            $('#addOptionButton').click(function () {
+                addOption();
+            });
+
+            $('#optionsContainer').on('click', '.remove-option', function () {
+                $(this).closest('.option-row').remove();
+                // Update the index of remaining options
+                $('#optionsContainer .option-row').each(function (index) {
+                    $(this).find('input[name^="Options"]').attr('name', `Options[${index}].Text`);
+                    $(this).find('input[name="CorrectOption"]').attr('value', index);
+                });
+                optionIndex = $('#optionsContainer .option-row').length; // Update the index
+                updateOptionLimit(); // Update the limit after removing an option
+                updateRemoveButtonVisibility(); // Ensure the remove button visibility is updated
+            });
+
+            $('#QuestionType').change(function () {
+                updateOptionLimit(); // Update option limit when question type changes
+                var questionType = $(this).val();
+                $('#optionsContainer .option-row').each(function () {
+                    $(this).find('input[name="CorrectOption"]').attr('type', questionType === 'Single' || questionType === 'ImageSingle' ? 'radio' : 'checkbox');
+                });
+            });
+
+            // Initialize remove button visibility
+            updateRemoveButtonVisibility(); // Ensure the remove button visibility is updated on page load
+
+            // Initialize the option limit based on the initial question type
+            updateOptionLimit();
+        });
+    </script>
+</body>
+</html>

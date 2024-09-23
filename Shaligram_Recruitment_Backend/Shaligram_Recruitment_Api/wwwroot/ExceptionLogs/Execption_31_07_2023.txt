@@ -1,0 +1,100 @@
+
+--------------------------------- 31/07/2023 04:39:54 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: One or more errors occurred. (Unable to load DLL 'libwkhtmltox' or one of its dependencies: The specified module could not be found. (0x8007007E))
+InnerException: System.DllNotFoundException: Unable to load DLL 'libwkhtmltox' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at DinkToPdf.WkHtmlToXBindings.wkhtmltopdf_init(Int32 useGraphics)
+   at DinkToPdf.PdfTools.Load()
+   at DinkToPdf.BasicConverter.Convert(IDocument document)
+   at DinkToPdf.SynchronizedConverter.<>n__0(IDocument document)
+   at DinkToPdf.SynchronizedConverter.<>c__DisplayClass5_0.<Convert>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+Exception Email sent: True
+Exception: 
+
+--------------------------------- 31/07/2023 04:40:30 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: One or more errors occurred. (Unable to load DLL 'libwkhtmltox' or one of its dependencies: The specified module could not be found. (0x8007007E))
+InnerException: System.DllNotFoundException: Unable to load DLL 'libwkhtmltox' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at DinkToPdf.WkHtmlToXBindings.wkhtmltopdf_init(Int32 useGraphics)
+   at DinkToPdf.PdfTools.Load()
+   at DinkToPdf.BasicConverter.Convert(IDocument document)
+   at DinkToPdf.SynchronizedConverter.<>n__0(IDocument document)
+   at DinkToPdf.SynchronizedConverter.<>c__DisplayClass5_0.<Convert>b__0()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+Exception Email sent: True
+Exception: 
+
+--------------------------------- 31/07/2023 05:17:10 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Unable to cast object of type 'iTextSharp.text.Document' to type 'iTextSharp.tool.xml.IElementHandler'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 05:17:32 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: The process cannot access the file 'C:\Users\sit310\Downloads\Doc1.pdf' because it is being used by another process.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 05:17:48 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: The process cannot access the file 'C:\Users\sit310\Downloads\Doc1.pdf' because it is being used by another process.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 05:18:05 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: The process cannot access the file 'C:\Users\sit310\Downloads\Doc1.pdf' because it is being used by another process.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 05:18:30 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Unable to cast object of type 'iTextSharp.text.Document' to type 'iTextSharp.tool.xml.IElementHandler'.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 05:59:33 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 05:59:49 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 06:04:33 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Invalid nested tag head found, expected closing tag link.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 06:05:10 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Invalid nested tag head found, expected closing tag link.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 06:06:57 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Invalid nested tag head found, expected closing tag link.
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 31/07/2023 06:08:40 PM ----------------------------------
+Requested URL: /api/employee/generate-pdf
+Exception: Invalid nested tag head found, expected closing tag link.
+InnerException: 
+Exception Email sent: True

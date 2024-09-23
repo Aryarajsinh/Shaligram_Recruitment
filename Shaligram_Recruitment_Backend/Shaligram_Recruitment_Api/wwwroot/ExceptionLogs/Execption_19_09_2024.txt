@@ -1,0 +1,36 @@
+
+--------------------------------- 19/09/2024 06:09:53 PM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 19/09/2024 06:09:59 PM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 19/09/2024 06:10:22 PM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 19/09/2024 06:10:28 PM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 19/09/2024 06:13:28 PM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
+
+--------------------------------- 19/09/2024 06:13:28 PM ----------------------------------
+Requested URL: /api/Student/getstudentlist
+Exception: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+InnerException: 
+Exception Email sent: True
