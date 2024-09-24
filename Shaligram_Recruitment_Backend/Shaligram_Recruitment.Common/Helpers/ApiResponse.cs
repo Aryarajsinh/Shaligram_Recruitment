@@ -23,11 +23,13 @@ namespace Shaligram_Recruitment.Common.Helpers
     public class ApiResponse<T> : BaseApiResponse
     {
         public virtual IList<T> Data { get; set; }
+        public int TotalRecords { get; set; } = 0;
     }
 
     public class ApiPostResponse<T> : BaseApiResponse
     {
         public virtual T Data { get; set; }
+        public int TotalRecords { get; set; } = 0;
     }
 
     public class Response : BaseApiResponse

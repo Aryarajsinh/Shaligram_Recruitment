@@ -38,6 +38,15 @@ namespace Shaligram_Recruitment.Model.ViewModels.Pagination
         public string Value { get; set; }
         public bool Regex { get; set; }
     }
+
+    public class ServerSidePage
+    {
+        public string search { get; set; }
+        public int page { get; set; }
+        public int pageSize { get; set; }
+        public string sortColumn { get; set; }
+        public string sortDirection { get; set; }
+    }
     
 
 }

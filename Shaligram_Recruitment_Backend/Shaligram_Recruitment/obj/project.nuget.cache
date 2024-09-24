@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ua0k5aMRr1vN65QvAPLvIhoKAlBGqZXfLCfLMHa7nbWX4ncSnqi1xpOc1kW8gvv5HKovGmhm7XxM9GTdj2LkAA==",
+  "dgSpecHash": "UqS1iPb5xfxAFE9zpUrwj9GATiLq4/ur0NeUxAH+437gBwqJEzVNMfx9aJXpfzDjtbfn2+cX/V7HRlK9ar6BsQ==",
   "success": true,
-  "projectFilePath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment\\Shaligram_Recruitment.csproj",
+  "projectFilePath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment\\Shaligram_Recruitment.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sit406\\.nuget\\packages\\alloverit\\7.26.0\\alloverit.7.26.0.nupkg.sha512",
     "C:\\Users\\sit406\\.nuget\\packages\\alloverit.assertion\\7.26.0\\alloverit.assertion.7.26.0.nupkg.sha512",

@@ -1,0 +1,74 @@
+<mat-dialog-content>
+    <mat-card>
+      <mat-card-content>
+        <div class="text-center">
+          <mat-card-header>
+            <mat-card-title class="text-center text-primary mb-2">
+              <h3>Batch Add</h3>
+            </mat-card-title>
+          </mat-card-header>
+          <button mat-icon-button mat-dialog-close class="close-button btn btn-danger">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+  
+        <form [formGroup]="CollegeForm" (ngSubmit)="SubmitBatch()" novalidate>
+          <mat-card>
+  
+            <mat-card-content>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- Student Name Field -->
+                  <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>CollegeName</mat-label>
+                        <mat-select formControlName="CollegeName"   required>
+                            <mat-option value="">-- Select CollegeName --</mat-option>
+                            <mat-option *ngFor="let data of CollegeName" [value]="data.collegeName">{{
+                                data.collegeName }}</mat-option>
+                        </mat-select>
+                    <mat-error
+                      *ngIf="submitted && CollegeForm.get('CollegeName')?.invalid && CollegeForm.get('CollegeName')?.touched">
+                      College Name is required.
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+  
+                <div class="col-md12">
+                  <!-- College Name Field -->
+                  <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>Years</mat-label>
+                    <input type="text" matInput formControlName="Years" required>
+                    <mat-error
+                      *ngIf="submitted && CollegeForm.get('Years')?.invalid && CollegeForm.get('Years')?.touched">
+                      Years is required.
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+  
+                <div class="col-md-12">
+                  <!-- Email Field -->
+                  <mat-form-field appearance="fill" class="w-100">
+                    <mat-label>BatchName</mat-label>
+                    <input type="text" matInput formControlName="BatchName" required>
+                    <mat-error
+                      *ngIf="submitted && CollegeForm.get('BatchName')?.invalid && CollegeForm.get('BatchName')?.touched">
+                      BatchName is required.
+                    </mat-error>
+                
+                  </mat-form-field>
+                </div>             
+           
+              </div>
+  
+              <!-- Submit Button -->
+              <div class="text-center col-md-12">
+                <button mat-raised-button type="submit" class="btn w-100 text-white"
+                  style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Submit</button>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </form>
+  
+      </mat-card-content>
+    </mat-card>
+  </mat-dialog-content>

@@ -1,0 +1,36 @@
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.student-details-card {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  margin-top: 20px;
+}

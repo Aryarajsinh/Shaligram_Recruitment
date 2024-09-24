@@ -122,14 +122,27 @@ namespace Shaligram_Recruitment.Data.DbRepository.StudentProfile
         #region StudentDetails
         public async Task<int> StudentAdd(StudentModel model)
         {
+            // Convert the list to a DataTable
+            DataTable studentTable = new DataTable("dbo.StudentType");
+            studentTable.Columns.Add("StudentName", typeof(string));
+            studentTable.Columns.Add("CollegeName", typeof(string));
+            studentTable.Columns.Add("BatchYear", typeof(string));
+            studentTable.Columns.Add("EmailAddress", typeof(string));
+            studentTable.Columns.Add("PhoneNumber", typeof(string));
+
+                studentTable.Rows.Add(model.StudentName, model.CollegeName, model.BatchYear, model.EmailAddress, model.PhoneNumber);
+            
+
+            // Use Dapper to pass the DataTable as a parameter
             var parameter = new DynamicParameters();
-            parameter.Add("@StudentName", model.StudentName);
-            parameter.Add("@CollegeName", model.CollegeName);
-            parameter.Add("@Batch", model.BatchYear);
-            parameter.Add("@Email", model.EmailAddress);
-            parameter.Add("@PhoneNumber", model.PhoneNumber);
-            var data = await ExecuteAsync<int>(StoredProcedures.StudentAdd, parameter, commandType: CommandType.StoredProcedure);
-            return data;
+            parameter.Add("@StudentData", studentTable.AsTableValuedParameter("dbo.StudentType"));
+
+            // Execute the stored procedure
+            var result = await ExecuteAsync<int>(StoredProcedures.StudentAdd, parameter, commandType: CommandType.StoredProcedure);
+
+            return result;
+
+         
         }
         #endregion 
         #region QuestionSetAdd

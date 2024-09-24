@@ -1,0 +1,12 @@
+.dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  }
+  

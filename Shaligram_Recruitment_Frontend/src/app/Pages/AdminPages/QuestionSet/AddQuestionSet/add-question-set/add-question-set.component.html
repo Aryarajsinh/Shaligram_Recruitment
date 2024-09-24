@@ -1,0 +1,41 @@
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-content>
+      <div class="text-center">
+        <mat-card-header>
+          <mat-card-title class="text-center text-primary mb-2">
+            <h3>QuestionSet Add</h3>
+          </mat-card-title>
+        </mat-card-header>
+        <button mat-icon-button mat-dialog-close class="close-button btn btn-danger">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+
+      <form [formGroup]="QuestionSetForm" (ngSubmit)="SubmitBatch()" novalidate>
+        <mat-card>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-md-12">
+                <!-- Student Name Field -->
+                <mat-form-field appearance="fill" class="w-100">
+                  <mat-label>QuestionSetName </mat-label>
+                  <input matInput formControlName="QuestionSetName" required>
+                  <mat-error
+                    *ngIf="submitted && QuestionSetForm.get('QuestionSetName')?.invalid && QuestionSetForm.get('QuestionSetName')?.touched">
+                    QuestionSet Name is required.
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </div>
+            <!-- Submit Button -->
+            <div class="text-center col-md-12">
+              <button mat-raised-button type="submit" class="btn w-100 text-white"
+                style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Submit</button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>

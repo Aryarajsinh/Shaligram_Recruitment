@@ -17,95 +17,95 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Shaligram_Recruitment
 build_property.RootNamespace = Shaligram_Recruitment
-build_property.ProjectDir = C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment\
+build_property.ProjectDir = C:\DotNet\Shaligram_RecruitmentDemo\Shaligram_Recruitment\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment
+build_property.MSBuildProjectDirectory = C:\DotNet\Shaligram_RecruitmentDemo\Shaligram_Recruitment
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/AdminPanel/ForgotPassword.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/AdminPanel/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/AdminPanel/ResetPassword.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/AdminPanel/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/AdminPanel/SignIn.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/AdminPanel/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/AdminPanel/Verification.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/AdminPanel/Verification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYW5lbFxWZXJpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/CollegeBatch/CollegeBatchList.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/CollegeBatch/CollegeBatchList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVnZUJhdGNoXENvbGxlZ2VCYXRjaExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Home/Dashboard.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/QuestionSet/QuestionSetList.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/QuestionSet/QuestionSetList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25TZXRcUXVlc3Rpb25TZXRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Questions/QuestionList.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Questions/QuestionList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlc3Rpb25zXFF1ZXN0aW9uTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/Error.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_BatchDetails.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_BatchDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYXRjaERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_SignInLayout.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_SignInLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWduSW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_StudentDetails.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_StudentDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHVkZW50RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_UpdateBatch.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_UpdateBatch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VcGRhdGVCYXRjaC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_UpdateQuestionSet.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_UpdateQuestionSet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VcGRhdGVRdWVzdGlvblNldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Student/Delete.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Student/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Student/Details.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Student/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Student/StudentList.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Student/StudentList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTdHVkZW50TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/_ViewImports.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/_ViewStart.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/DotNet/Shaligram_Recruitment/Shaligram_Recruitment/Views/Shared/_Layout.cshtml]
+[C:/DotNet/Shaligram_RecruitmentDemo/Shaligram_Recruitment/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dyses3gppl

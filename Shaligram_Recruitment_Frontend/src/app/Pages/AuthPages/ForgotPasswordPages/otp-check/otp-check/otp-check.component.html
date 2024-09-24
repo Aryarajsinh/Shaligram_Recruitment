@@ -1,0 +1,33 @@
+
+<div class="bodyClass" >
+    <div class="login-box" style="margin-left: -400px !important;">
+        <h2>Enter Otp Below</h2>
+        <form    >
+            <div class="user-box">
+              <label>Forgot OTP* </label><br>
+              <br>
+                <ng-otp-input  (onInputChange) = ValueChange($event)  [config]="{length:6, disableAutoFocus: false, allowNumbersOnly: true}"></ng-otp-input>
+                <span  class="text-danger" *ngIf="error">Enter Valid OTP</span>
+              </div>
+              <div class="row" style="margin-top: 20px;">
+                <div class="col-sm-6">
+                  <a routerLink="/auth/login">Remember the Password</a>
+                </div>
+                <div class="col-sm-6">
+                  <a (click)="ResendOtp()" type="button">Resend OTP</a>
+                </div>
+              </div>
+              <div *ngIf="remainingTime" style="margin-top: 10px;">
+               <p style="color: white;">Time remaining: {{ remainingTime }} seconds</p> 
+              </div>
+          <button  class="btn" type="button" (click)="OTPValidCheck()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    

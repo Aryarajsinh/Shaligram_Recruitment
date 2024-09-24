@@ -5,6 +5,8 @@ using Shaligram_Recruitment.Model.ViewModels.Student;
 using Shaligram_Recruitment.Model.ViewModels;
 using Shaligram_Recruitment.Services.StudentProfile;
 using Shaligram_Recruitment.Model.ViewModels.QuestionSet;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Shaligram_Recruitment.Model.ViewModels.Pagination;
 
 namespace Shaligram_Recruitment_Api.Controllers
 {
@@ -19,15 +21,18 @@ namespace Shaligram_Recruitment_Api.Controllers
             _questionSetService = studentProfileService;
         }
         [HttpPost("questionSet-list")]
-        public async Task<ApiResponse<QuestionSetModel>> QuestionSetList(CommonPaginationModel model)
+        public async Task<ApiResponse<QuestionSetModel>> QuestionSetList(ServerSidePage model)
         {
             ApiResponse<QuestionSetModel> response = new ApiResponse<QuestionSetModel> { Data = new List<QuestionSetModel>() };
+            
             try
             {
-                List<QuestionSetModel> studentList = await _questionSetService.GetQuestionSet();
-                if (studentList != null && studentList.Count > 0)
+                model.sortDirection = (model.sortDirection.ToLower() == "desc") ? "desc" : "asc";
+                PagedResult questionSet = await _questionSetService.GetPageQuestionSet(model.search, model.page, model.pageSize, model.sortColumn, model.sortDirection);
+                if (questionSet != null)
                 {
-                    response.Data = studentList;
+                    response.Data = questionSet.QuestionSet;
+                    response.TotalRecords = questionSet.TotalRecords;
                     response.Success = true;
                     response.Message = ErrorMessages.QuestionSetList;
                 }

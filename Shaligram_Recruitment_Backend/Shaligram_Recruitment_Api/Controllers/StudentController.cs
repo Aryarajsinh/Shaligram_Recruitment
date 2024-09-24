@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Shaligram_Recruitment.Common.Helpers;
 using Shaligram_Recruitment.Model.ViewModels;
 using Shaligram_Recruitment.Model.ViewModels.CollegeBatch;
+using Shaligram_Recruitment.Model.ViewModels.Pagination;
 using Shaligram_Recruitment.Model.ViewModels.Student;
 using Shaligram_Recruitment.Services.StudentProfile;
 
@@ -30,15 +31,17 @@ namespace Shaligram_Recruitment_Api.Controllers
         /// <param name="model"></param>
         /// <returns>list</returns>
         [HttpPost("student-list")]
-        public async Task<ApiResponse<StudentModel>> studentList(CommonPaginationModel model)
-        {
-            ApiResponse<StudentModel> response = new ApiResponse<StudentModel> { Data = new List<StudentModel>() };
+        public async Task<ApiPostResponse<List<StudentModel>>> studentList(ServerSidePage model)
+        {            
+            ApiPostResponse<List<StudentModel>> response = new ApiPostResponse<List<StudentModel>>();
             try
             {
-                List<StudentModel> studentList = await _studentProfileService.StudentList();
-                if (studentList != null && studentList.Count > 0)
+                model.sortDirection = (model.sortDirection.ToLower() == "desc") ? "desc" : "asc";
+                PagedResult studentList = await _studentProfileService.GetPagedUsers(model.search, model.page, model.pageSize, model.sortColumn, model.sortDirection);
+                if (studentList != null)
                 {
-                    response.Data = studentList;
+                    response.Data = studentList.Users;
+                    response.TotalRecords = studentList.TotalRecords;
                     response.Success = true;
                     response.Message = ErrorMessages.StudentList;
                 }

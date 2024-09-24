@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Shaligram_Recruitment.Common.Helpers;
 using Shaligram_Recruitment.Model.ViewModels;
 using Shaligram_Recruitment.Model.ViewModels.CollegeBatch;
+using Shaligram_Recruitment.Model.ViewModels.Pagination;
 using Shaligram_Recruitment.Services.StudentProfile;
 
 namespace Shaligram_Recruitment_Api.Controllers
@@ -19,15 +20,17 @@ namespace Shaligram_Recruitment_Api.Controllers
         }
 
         [HttpPost("collegebatch-list")]
-        public async Task<ApiResponse<CollegeBatchModel>> CollegebatchList(CommonPaginationModel model)
+        public async Task<ApiResponse<CollegeBatchModel>> CollegebatchList(string search = "", int page = 1, int pageSize = 10, string sortColumn = "batchId", string sortDirection = "asc")
         {
             ApiResponse<CollegeBatchModel> response = new ApiResponse<CollegeBatchModel> { Data = new List<CollegeBatchModel>() };
             try
             {
-                List<CollegeBatchModel> studentList = await _collegeBatchService.GetCollegeName();
-                if (studentList != null && studentList.Count > 0)
+                sortDirection = (sortDirection.ToLower() == "desc") ? "desc" : "asc";
+                PagedResult CollegeList = await _collegeBatchService.GetPageCollegeBatch(search, page, pageSize, sortColumn, sortDirection);
+                if (CollegeList != null)
                 {
-                    response.Data = studentList;
+                    response.Data = CollegeList.CollegeBatch;
+                    response.TotalRecords = CollegeList.TotalRecords;
                     response.Success = true;
                     response.Message = ErrorMessages.CollegeBatchList;
                 }

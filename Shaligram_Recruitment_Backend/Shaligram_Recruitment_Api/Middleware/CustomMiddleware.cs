@@ -112,7 +112,7 @@ namespace Shaligram_Recruitment_Api.Middleware
                 await HandleExceptionAsync(context, ex);
             }
 
-        }
+            }
 
         /// <summary>
         /// Delete files from error logs folder which is older than 7 days.

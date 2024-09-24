@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AixxmDXK+R4qtE2PFwZIj5uNEYWPH/twELm7rJEznaeiPsvtEjE000Qtu/baF1M9kVvAYYQ9/sTSTWZVr0ZxiA==",
+  "dgSpecHash": "Ox9xozaThiVugi4LDfKXFk++fgnT9m91vsgKFRbPxWGp0BiX3HohKbW6e7be47/R6eZDSxS9XntpV8ShZs4Arw==",
   "success": true,
-  "projectFilePath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj",
+  "projectFilePath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sit406\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\sit406\\.nuget\\packages\\enums.net\\4.0.1\\enums.net.4.0.1.nupkg.sha512",

@@ -21,6 +21,7 @@ namespace Shaligram_Recruitment.Model.ViewModels.Student
         public string? EmailAddress { get; set; }
         
         public string? PhoneNumber { get; set; }
+        public int? TotalRecord { get; set; }
    
     }
 

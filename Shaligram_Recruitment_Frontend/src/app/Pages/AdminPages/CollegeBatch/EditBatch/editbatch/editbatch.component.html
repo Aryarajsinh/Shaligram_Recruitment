@@ -1,0 +1,49 @@
+   <mat-dialog-content>
+    <mat-card class="student-details-card">
+      <mat-card-content>
+        <!-- Header with Close Button -->
+        <div class="header">
+          <h2 class="text-center">Student Details</h2>
+          <button mat-icon-button mat-dialog-close class="btn btn-danger">
+            <mat-icon>close</mat-icon>
+          </button>
+        </div>
+    
+        <!-- Student Form -->
+        <form [formGroup]="DetailsCollegeBatch" (ngSubmit)="SubmitEditUser()" novalidate>
+          <!-- College Name Field -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label class="text-dark">College Name</mat-label>
+            <input matInput formControlName="CollegeName" required>
+            <mat-error *ngIf="submitted && DetailsCollegeBatch.get('CollegeName')?.invalid && DetailsCollegeBatch.get('CollegeName')?.touched">
+              College Name is required.
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Years Field -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Years</mat-label>
+            <input matInput formControlName="Years" required>
+            <mat-error *ngIf="submitted && DetailsCollegeBatch.get('Years')?.invalid && DetailsCollegeBatch.get('Years')?.touched">
+              Years is required.
+            </mat-error>
+          </mat-form-field>
+  
+          <!-- Batch Name Field -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Batch Name</mat-label>
+            <input type="text" matInput formControlName="BatchName" required>
+            <mat-error *ngIf="submitted && DetailsCollegeBatch.get('BatchName')?.invalid && DetailsCollegeBatch.get('BatchName')?.touched">
+              Email is required.
+            </mat-error>           
+          </mat-form-field>
+          <div class="text-center col-md-12">
+            <button mat-raised-button type="submit" class="btn w-100 text-white"
+              style="background: linear-gradient(90deg, #1C73AA 0%, #123953 100%);">Submit</button>
+          </div>
+         
+        </form> 
+      </mat-card-content>
+    </mat-card>
+  </mat-dialog-content>
+  

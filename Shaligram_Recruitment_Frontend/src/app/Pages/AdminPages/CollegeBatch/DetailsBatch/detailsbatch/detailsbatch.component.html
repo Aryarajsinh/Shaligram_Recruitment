@@ -1,0 +1,22 @@
+<mat-dialog-content>
+    <mat-card>
+      <mat-card-content>
+        <div class="text-center">
+            <mat-card-header>
+              <mat-card-title class="text-center text-primary mb-2">
+                <h3 class="mb-3">Batch Details</h3>
+              </mat-card-title>
+            </mat-card-header>
+            <button mat-icon-button mat-dialog-close class="close-button btn btn-danger">
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+      <dt class="col-sm-10 ms-3 fs-5" style="color: #7A8595;">College Name:</dt>
+      <dd class="col-sm-10 ms-3 fs-5 mt-1" style="color: #333333; font:bold">{{DetailsCollegeBatch.get('CollegeName')?.value}}</dd>
+      <dt class="col-sm-10 ms-3 fs-5" style="color: #7A8595;">Years :</dt>
+      <dd class="col-sm-10 ms-3 fs-5 mt-1" style="color: #333333; font:bold ">{{DetailsCollegeBatch.get('Years')?.value}}</dd>
+      <dt class="col-sm-10 ms-3 fs-5" style="color: #7A8595;">BatchName:</dt>
+      <dd class="col-sm-10 ms-3 fs-5 mt-1" style="color: #333333; font:bold ">{{DetailsCollegeBatch.get('BatchName')?.value}}</dd>   
+    </mat-card-content>
+  </mat-card>
+  </mat-dialog-content>

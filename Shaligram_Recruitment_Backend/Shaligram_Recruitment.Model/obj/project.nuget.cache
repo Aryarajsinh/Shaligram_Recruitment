@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fWX5Z54siHDZUrA/flqu25SBLk6l6JliLasulVOrZ6W3h3u2CoXy35YHkMFzgWugjqJuEm8MaoSaXFWropuKKA==",
+  "dgSpecHash": "sA+6XD64P9aEIvwscpbpmVUCn4FZDDeU0cA8U1Oxg62c/XcfqdAYriiapAv+BZg+uZSn9zNcY9mRU6wKJxRzVg==",
   "success": true,
-  "projectFilePath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
+  "projectFilePath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sit406\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\sit406\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
