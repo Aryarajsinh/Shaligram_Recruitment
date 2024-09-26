@@ -38,7 +38,7 @@ export class DashboardComponent {
     Swal.fire({
       title: 'Are you sure?',
       text: 'You Really want To LogOut!',
-      icon: 'warning',
+      icon: 'warning',  
       showCancelButton: true,
       confirmButtonText: 'Yes, Logout',
       cancelButtonText: 'No, cancel!',
