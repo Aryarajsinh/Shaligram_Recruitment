@@ -6317,11 +6317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj",
+      "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj",
       "projectName": "Shaligram_Recruitment_Api",
-      "projectPath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj",
+      "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\Shaligram_Recruitment_Api.csproj",
       "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
-      "outputPath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\obj\\",
+      "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6338,11 +6338,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj": {
-              "projectPath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj"
+            "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj": {
+              "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Common\\Shaligram_Recruitment.Common.csproj"
             },
-            "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj": {
-              "projectPath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj"
+            "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj": {
+              "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Services\\Shaligram_Recruitment.Services.csproj"
             }
           }
         }

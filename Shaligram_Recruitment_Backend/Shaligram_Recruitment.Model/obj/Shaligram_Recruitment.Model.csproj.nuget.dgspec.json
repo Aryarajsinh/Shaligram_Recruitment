@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {}
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {}
   },
   "projects": {
-    "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {
+    "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
+        "projectUniqueName": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
         "projectName": "Shaligram_Recruitment.Model",
-        "projectPath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
+        "projectPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Model\\Shaligram_Recruitment.Model.csproj",
         "packagesPath": "C:\\Users\\sit406\\.nuget\\packages\\",
-        "outputPath": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment.Model\\obj\\",
+        "outputPath": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sit406\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -28,7 +28,7 @@ namespace Shaligram_Recruitment_Api.Controllers
         /// <summary>
         /// Get student List With Server side pagination
         /// </summary>
-        /// <param name="model"></param>
+        /// <param name="Student"></param>
         /// <returns>list</returns>
         [HttpPost("student-list")]
         public async Task<ApiPostResponse<List<StudentModel>>> studentList(ServerSidePage model)

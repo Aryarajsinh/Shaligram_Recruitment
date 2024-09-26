@@ -1,59 +1,59 @@
 {
   "Files": [
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Admin.jpg",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Admin.jpg",
       "PackagePath": "staticwebassets\\Documents\\ProfileImages\\Admin.jpg"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Hemang Dholu.jpg",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Hemang Dholu.jpg",
       "PackagePath": "staticwebassets\\Documents\\ProfileImages\\Hemang Dholu.jpg"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Manav Nanda.jpg",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Manav Nanda.jpg",
       "PackagePath": "staticwebassets\\Documents\\ProfileImages\\Manav Nanda.jpg"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Sanjay Nagar.png",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\Sanjay Nagar.png",
       "PackagePath": "staticwebassets\\Documents\\ProfileImages\\Sanjay Nagar.png"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\hemang022.jpg",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\hemang022.jpg",
       "PackagePath": "staticwebassets\\Documents\\ProfileImages\\hemang022.jpg"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\undraw_profile.svg",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\Documents\\ProfileImages\\undraw_profile.svg",
       "PackagePath": "staticwebassets\\Documents\\ProfileImages\\undraw_profile.svg"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\EmailTemplates\\RegisterUserOPT.html",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\EmailTemplates\\RegisterUserOPT.html",
       "PackagePath": "staticwebassets\\EmailTemplates\\RegisterUserOPT.html"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\EmailTemplates\\UserForgotPassword.html",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\EmailTemplates\\UserForgotPassword.html",
       "PackagePath": "staticwebassets\\EmailTemplates\\UserForgotPassword.html"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_12_07_2023.txt",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_12_07_2023.txt",
       "PackagePath": "staticwebassets\\ExceptionLogs\\Execption_12_07_2023.txt"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_16_09_2024.txt",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_16_09_2024.txt",
       "PackagePath": "staticwebassets\\ExceptionLogs\\Execption_16_09_2024.txt"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_19_09_2024.txt",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_19_09_2024.txt",
       "PackagePath": "staticwebassets\\ExceptionLogs\\Execption_19_09_2024.txt"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_23_09_2024.txt",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_23_09_2024.txt",
       "PackagePath": "staticwebassets\\ExceptionLogs\\Execption_23_09_2024.txt"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_24_07_2023.txt",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_24_07_2023.txt",
       "PackagePath": "staticwebassets\\ExceptionLogs\\Execption_24_07_2023.txt"
     },
     {
-      "Id": "C:\\DotNet\\Shaligram_RecruitmentDemo\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_31_07_2023.txt",
+      "Id": "C:\\DotNet\\Shaligram_Recruitment\\Shaligram_Recruitment_Backend\\Shaligram_Recruitment_Api\\wwwroot\\ExceptionLogs\\Execption_31_07_2023.txt",
       "PackagePath": "staticwebassets\\ExceptionLogs\\Execption_31_07_2023.txt"
     },
     {

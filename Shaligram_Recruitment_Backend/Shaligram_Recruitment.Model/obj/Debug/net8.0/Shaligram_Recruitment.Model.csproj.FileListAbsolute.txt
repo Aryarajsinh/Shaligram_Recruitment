@@ -22,3 +22,16 @@ C:\DotNet\Shaligram_RecruitmentDemo\Shaligram_Recruitment.Model\obj\Debug\net8.0
 C:\DotNet\Shaligram_RecruitmentDemo\Shaligram_Recruitment.Model\obj\Debug\net8.0\refint\Shaligram_Recruitment.Model.dll
 C:\DotNet\Shaligram_RecruitmentDemo\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.pdb
 C:\DotNet\Shaligram_RecruitmentDemo\Shaligram_Recruitment.Model\obj\Debug\net8.0\ref\Shaligram_Recruitment.Model.dll
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\bin\Debug\net8.0\Shaligram_Recruitment.Model.deps.json
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\bin\Debug\net8.0\Shaligram_Recruitment.Model.dll
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\bin\Debug\net8.0\Shaligram_Recruitment.Model.pdb
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.csproj.AssemblyReference.cache
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.AssemblyInfoInputs.cache
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.AssemblyInfo.cs
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.csproj.CoreCompileInputs.cache
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.sourcelink.json
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.dll
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\refint\Shaligram_Recruitment.Model.dll
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\Shaligram_Recruitment.Model.pdb
+C:\DotNet\Shaligram_Recruitment\Shaligram_Recruitment_Backend\Shaligram_Recruitment.Model\obj\Debug\net8.0\ref\Shaligram_Recruitment.Model.dll

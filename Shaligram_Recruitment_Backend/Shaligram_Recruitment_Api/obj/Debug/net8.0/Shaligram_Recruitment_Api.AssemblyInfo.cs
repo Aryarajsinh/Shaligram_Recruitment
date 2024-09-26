@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shaligram_Recruitment_Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b52c8a22eec292c8eb704d6bc753bf08555f414")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shaligram_Recruitment_Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shaligram_Recruitment_Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
