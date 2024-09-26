@@ -32,7 +32,7 @@ export class DashboardComponent {
     this.Email= this.commonService.Decrypt(this.storageService.getValue('EncryptedEmail'));
   }
 
-
+//Logout method
 
   logout() {
     Swal.fire({
